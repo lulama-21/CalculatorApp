@@ -1,0 +1,45 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  color: white;
+}
+
+#inputField {
+  background-color: rgb(63, 62, 62);
+  color: white;
+  font-size: 2em;
+  border: none;
+  text-align: right;
+  width: 100%;
+}
+
+table,
+tr,
+td {
+  border: 1px solid;
+}
+
+/*  16% of the overall height */
+tr {
+  height: 16.02vh;
+}
+
+td {
+  cursor: pointer;
+  width: 24vw; /* 25% of the width */
+}
+
+.numbers {
+  background-color: grey;
+}
+
+.operators {
+  background-color: orange;
+}
+
+#clear {
+  background-color: rgb(63, 62, 62);
+}

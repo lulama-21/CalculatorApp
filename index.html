@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <table>
+      <tr style="background-color: rgb(63, 62, 62);">
+        <td colspan="4">
+          <input type="text" id="inputField" value="0"/>
+        </td>
+      </tr>
+      <tr>
+        <td class="numbers" onclick="userNumInput(7)">7</td>
+        <td class="numbers" onclick="userNumInput(8)">8</td>
+        <td class="numbers" onclick="userNumInput(9)">9</td>
+        <td class="operators" onclick="operatorsInput('x')">x</td>
+      </tr>
+      <tr>
+        <td class="numbers" onclick="userNumInput(4)">4</td>
+        <td class="numbers" onclick="userNumInput(5)">5</td>
+        <td class="numbers" onclick="userNumInput(6)">6</td>
+        <td class="operators" onclick="operatorsInput('-')">-</td>
+      </tr>
+      <tr>
+        <td class="numbers" onclick="userNumInput(1)">1</td>
+        <td class="numbers" onclick="userNumInput(2)">2</td>
+        <td class="numbers" onclick="userNumInput(3)">3</td>
+        <td class="operators" onclick="operatorsInput('+')">+</td>
+      </tr>
+      <tr>
+        <td class="numbers" colspan="2" onclick="userNumInput(0)">0</td>
+        <td id="clear" allClear()">AC</td>
+        <td class="operators" onclick="operatorsInput('/')">/</td>
+      </tr>
+      <tr>
+        <td id="equals" class="operators" colspan="4" onclick="calc()">=</td>
+      </tr>
+    </table>
+  </body>
+</html>
